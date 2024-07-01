@@ -102,6 +102,18 @@ const skillData = [
       {
         imgPath: "/about/notion.svg",
       },
+      {
+        imgPath: "/about/html.svg",
+      },
+      {
+        imgPath: "/about/css.svg",
+      },
+      {
+        imgPath: "/about/js.svg",
+      },
+      {
+        imgPath: "/about/react.svg",
+      },
     ],
   },
 ];
@@ -298,6 +310,7 @@ const About = () => {
                                 height={48}
                                 alt=""
                                 priority
+                                className="dark:invert-[100%] dark:filter-[brightness(0) grayscale(100%)]"
                               />
                             </div>
                           );
