@@ -18,7 +18,7 @@ import ProjectCard from "@/components/ProjectCard";
 const projectData = [
   {
     image: "/work/2.png",
-    category: "react js",
+    category: "react js, Vite, Tailwindcss",
     name: "NatureNest Website",
     description:
       "NatureNest: News, projects and events for earth sustainability. Support conservation by donating and participating in volunteer programs.",
@@ -27,19 +27,10 @@ const projectData = [
   },
   {
     image: "/work/1.png",
-    category: "Laravel",
+    category: "Laravel, bootstrap",
     name: "PetPaws",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.",
-    link: "/",
-    github: "https://github.com/aryafrndk/PetPaws",
-  },
-  {
-    image: "/work/1.png",
-    category: "Laravel",
-    name: "PetPaws",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.",
+      "A platform that facilitates the buying and selling and adoption of cats safely and comfortably for animal lovers, with complete features to make searching easier.",
     link: "/",
     github: "https://github.com/aryafrndk/PetPaws",
   },
