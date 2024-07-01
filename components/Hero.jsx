@@ -25,7 +25,7 @@ const Hero = () => {
               Frontend Developer
             </div>
             <h1 className="h1 mb-4">Hello, my name is Arya Frandika Daulay</h1>
-            <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
+            <p className="text-black text-lg mb-8 font-light max-w-[490px] mx-auto xl:mx-0 dark:text-white">
               Based in Bandung, Indonesia, I'm passionate about creating engaging,
               digital experiences on the web.
             </p>
