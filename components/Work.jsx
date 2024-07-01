@@ -21,9 +21,18 @@ const projectData = [
     category: "react js",
     name: "NatureNest Website",
     description:
-      "NatureNest is a platform dedicated to nature and environmental lovers. This website aims to inspire and empower individuals and communities to contribute to environmental conservation through various initiatives and campaigns. With a primary focus on sustainability and conservation, NatureNest provides up-to-date information on environmental projects, events, news, and opportunities to donate and volunteer.",
+      "NatureNest: News, projects and events for earth sustainability. Support conservation by donating and participating in volunteer programs.",
     link: "https://aryafrndk.github.io/naturenest/",
     github: "https://github.com/aryafrndk/naturenest",
+  },
+  {
+    image: "/work/1.png",
+    category: "Laravel",
+    name: "PetPaws",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.",
+    link: "/",
+    github: "https://github.com/aryafrndk/PetPaws",
   },
   {
     image: "/work/1.png",
@@ -44,7 +53,7 @@ const Work = () => {
         <div className="max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start">
           <h2 className="section-title mb-4">Latest Projects</h2>
           <p className="subtitle mb-8">
-          A concise overview of selected frontend development projects, showcasing skills and capabilities.
+            A concise overview of selected frontend development projects, showcasing skills and capabilities.
           </p>
           <Link href="/projects">
             <Button>All projects</Button>
@@ -53,7 +62,7 @@ const Work = () => {
         {/* slider */}
         <div className="xl:max-w-[1000px] xl:absolute right-0 top-0">
           <Swiper
-            className="h-[480px] bg-white dark:bg-secondary/0"
+            className="h-[600px] bg-white dark:bg-secondary/0 "
             slidesPerView={1}
             breakpoints={{
               640: {
@@ -64,8 +73,7 @@ const Work = () => {
             modules={[Pagination]}
             pagination={{ clickable: true }}
           >
-            {/* show only the first 4 projects for the slides */}
-            {projectData.slice(0, 4).map((project, index) => (
+            {projectData.map((project, index) => (
               <SwiperSlide key={index}>
                 <ProjectCard project={project} />
               </SwiperSlide>
@@ -76,4 +84,5 @@ const Work = () => {
     </section>
   );
 };
+
 export default Work;
