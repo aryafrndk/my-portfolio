@@ -34,6 +34,15 @@ const projectData = [
     link: "/",
     github: "https://github.com/aryafrndk/PetPaws",
   },
+  {
+    image: "/work/3.png",
+    category: "react js, Vite, Tailwindcss",
+    name: "To-Do List App",
+    description:
+      "Todo List app built with ReactJS. Features: easy-to-use interface, fast and responsive, TailwindCSS, saved in localStorage.",
+    link: "https://aryafrndk.github.io/my-todo-app/",
+    github: "https://github.com/aryafrndk/my-todo-app",
+  },
 ];
 
 const Work = () => {
