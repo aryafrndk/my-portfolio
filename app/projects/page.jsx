@@ -2,45 +2,7 @@
 import React, { useState } from "react";
 import { Tabs, TabsList, TabsContent, TabsTrigger } from "@/components/ui/tabs";
 import ProjectCard from "@/components/ProjectCard";
-
-const projectData = [
-  {
-    image: "/work/4.png",
-    category: "next js, Tailwindcss, material ui",
-    name: "Movie Search App",
-    description:
-      "Movie search app built with ReactJS and Next.js. Features include: intuitive search interface, displays popular movies by default when search is empty, utilizes TMDB API, responsive design with TailwindCSS.",
-    link: "https://github.com/aryafrndk/movie-search-app",
-    github: "https://movie-search-apps.vercel.app/",
-  },
-  {
-    image: "/work/3.png",
-    category: "react js, Vite, Tailwindcss",
-    name: "To-Do List App",
-    description:
-      "Todo List app built with ReactJS. Features: easy-to-use interface, fast and responsive, TailwindCSS, saved in localStorage.",
-    link: "https://aryafrndk.github.io/my-todo-app/",
-    github: "https://github.com/aryafrndk/my-todo-app",
-  },
-  {
-    image: "/work/2.png",
-    category: "react js, Vite, Tailwindcss",
-    name: "NatureNest Website",
-    description:
-      "NatureNest: News, projects and events for earth sustainability. Support conservation by donating and participating in volunteer programs.",
-    link: "https://aryafrndk.github.io/naturenest/",
-    github: "https://github.com/aryafrndk/naturenest",
-  },
-  {
-    image: "/work/1.png",
-    category: "Laravel, bootstrap",
-    name: "PetPaws",
-    description:
-      "A platform that facilitates the buying and selling and adoption of cats safely and comfortably for animal lovers, with complete features to make searching easier.",
-    link: "/",
-    github: "https://github.com/aryafrndk/PetPaws",
-  },
-];
+import projectData from '@/data/projectData.js';
 
 
 // remove category duplicates
