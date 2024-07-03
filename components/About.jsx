@@ -114,6 +114,9 @@ const skillData = [
       {
         imgPath: "/about/react.svg",
       },
+      {
+        imgPath: "/about/tailwind.svg",
+      },
     ],
   },
 ];
