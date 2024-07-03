@@ -156,7 +156,7 @@ const About = () => {
                 <TabsContent value="personal">
                   <div className="text-center">
                     <h3 className="h3 mb-4">
-                      Unmatched Service Quality for Over 10 Years
+                    Provide the best service
                     </h3>
                     <p className="subtitle max-w-xl mx-auto xl:text-center">
                       I specialize in crafting intuitive websites with
