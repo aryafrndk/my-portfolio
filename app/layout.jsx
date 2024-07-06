@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 
 //Theme Provider
 import { ThemeProvider } from "@/components/ThemeProvider";
+import 'animate.css';
 
 const outfit = Outfit({ subsets: ["latin"] });
 

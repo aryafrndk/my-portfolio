@@ -15,7 +15,7 @@ const links = [
 const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {
   const path = usePathname();
   return (
-    <nav className={`${containerStyles}`}>
+    <nav className={`${containerStyles} navbar animate__animated animate__fadeInDown animate__delay-1s`}>
       {links.map((link, index) => {
         return (
           <Link

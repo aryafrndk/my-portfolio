@@ -8,6 +8,9 @@ import { RiArrowDownSLine } from "react-icons/ri";
 // components
 import Socials from "./Socials";
 
+// Import animate.css
+import "animate.css";
+
 const Hero = () => {
   const handleDownload = () => {
     // URL atau path CV
@@ -25,18 +28,18 @@ const Hero = () => {
         <div className="flex flex-col items-center xl:flex-row justify-between gap-y-8 xl:gap-x-8">
           {/* text */}
           <div className="flex max-w-[700px] flex-col justify-center mx-auto text-center xl:text-left">
-            <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px] text-center">
+            <div className="frontend text-sm uppercase font-semibold mb-4 text-primary tracking-[4px] text-center animate__animated animate__fadeInUp animate__delay-1s">
               Frontend Developer
             </div>
-            <h1 className="h1 mb-4 text-center">
+            <h1 className="h1 mb-4 text-center animate__animated animate__fadeInUp animate__delay-1s">
               Hello, my name is Arya Frandika Daulay
             </h1>
-            <p className="text-black text-lg mb-8 font-light max-w-[490px] mx-auto dark:text-white text-center">
+            <p className="deskripsi text-black text-lg mb-8 font-light max-w-[490px] mx-auto dark:text-white text-center animate__animated animate__fadeInUp animate__delay-1s">
               Based in Bandung, Indonesia, I'm passionate about creating
               engaging, digital experiences on the web.
             </p>
             {/* buttons */}
-            <div className="flex flex-col gap-y-3 md:flex-row md:gap-x-3 mx-auto mb-12 items-center justify-center">
+            <div className="buttoncontact flex flex-col gap-y-3 md:flex-row md:gap-x-3 mx-auto mb-12 items-center justify-center animate__animated animate__fadeInUp animate__delay-1s">
               <Link href="/contact">
                 <Button className="gap-x-3">
                   Contact Me <Send size={18} />
@@ -51,7 +54,7 @@ const Hero = () => {
               </Button>
             </div>
             {/* socials */}
-            <Socials containerStyles="flex gap-x-6 mx-auto xl:mx-0 justify-center" />
+            <Socials containerStyles="sosial flex gap-x-6 mx-auto xl:mx-0 justify-center animate__animated animate__fadeInUp animate__delay-1s" />
           </div>
           {/* image */}
           <div className="hidden xl:flex relative">{/* Image */}</div>

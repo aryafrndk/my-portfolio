@@ -8,7 +8,7 @@ const ThemeToggler = () => {
   const { theme, setTheme } = useTheme();
   return (
     <div>
-      <Button
+      <Button className="buttontema animate__animated animate__fadeInDown animate__delay-1s"
         variant="outline"
         size="icon"
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}

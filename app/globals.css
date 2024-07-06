@@ -92,3 +92,31 @@
   .swiper-pagination-bullet {
   @apply bg-primary;
   }
+
+  .frontend {
+    --animate-delay: 0.7s;
+  }
+
+  .deskripsi{
+    --animate-delay: 1.5s;
+  }
+
+  .buttoncontact{
+    --animate-delay: 2.1s;
+  }
+
+  .sosial{
+    --animate-delay: 2.5s;
+  }
+
+  .navbar{
+    --animate-delay: 0.3s;
+  }
+
+  .logo{
+    --animate-delay: 0.3s;
+  }
+
+  .buttontema{
+    --animate-delay: 0.3s;
+  }
