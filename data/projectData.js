@@ -1,5 +1,14 @@
 const projectData = [
     {
+      image: "/work/5.png",
+      category: "react js, react Bootstrap,",
+      name: "Academicx",
+      description:
+        "Responsive class website built with ReactJS and Vite. Features include: intuitive navigation with React-Router, dynamic content display using Swiper, engaging animations with Animate Style and Animate On Scroll, structured content using Accordion, and sleek design with Bootstrap/React-Bootstrap.",
+      link: "https://academicx.vercel.app/",
+      github: "https://github.com/aryafrndk/Academicx",
+    },
+    {
       image: "/work/4.png",
       category: "next js, Tailwindcss, material ui",
       name: "Movie Search App",
