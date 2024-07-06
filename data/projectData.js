@@ -4,7 +4,7 @@ const projectData = [
       category: "react js, react Bootstrap,",
       name: "Academicx",
       description:
-        "Responsive class website built with ReactJS and Vite. Features include: intuitive navigation with React-Router, dynamic content display using Swiper, engaging animations with Animate Style and Animate On Scroll, structured content using Accordion, and sleek design with Bootstrap/React-Bootstrap.",
+        "Responsive class website built with ReactJS and Vite. Features: React-Router, Swiper, Animate Style, Animate On Scroll, Accordion, Bootstrap/React-Bootstrap.",
       link: "https://academicx.vercel.app/",
       github: "https://github.com/aryafrndk/Academicx",
     },
