@@ -120,3 +120,19 @@
   .buttontema{
     --animate-delay: 0.3s;
   }
+
+  .MyProjects{
+    --animate-delay: 0.8s;
+  }
+
+  .SayHello{
+    --animate-delay: 0.8s;
+  }
+
+  .Lets{
+    --animate-delay: 1.1s;
+  }
+
+  .Interested{
+    --animate-delay: 1.4s;
+  }
