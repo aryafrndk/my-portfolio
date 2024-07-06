@@ -1,7 +1,6 @@
 import DevImg from "./DevImg";
 import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-
 import {
   User2,
   MailIcon,
@@ -65,7 +64,7 @@ const qualificationData = [
       },
       {
         company: "Telkom Radio",
-        role: "Staff Of Station Divison",
+        role: "Staff Of Station Division",
         years: "2021 - 2022",
       },
     ],
@@ -80,7 +79,7 @@ const skillData = [
         name: "HTML5, CSS3, JavaScript",
       },
       {
-        name: "React, Next,js",
+        name: "React, Next.js",
       },
       {
         name: "Bootstrap 5, Tailwind CSS, Shadcn UI",
@@ -132,12 +131,12 @@ const About = () => {
         <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
           About me
         </h2>
-        <div className="flex flex-col xl:flex-row ">
+        <div className="flex flex-col xl:flex-row">
           {/* tabs */}
           <div className="flex-1">
             <Tabs defaultValue="personal">
-              <TabsList className="w-full grid xl:grid-cols-3 xl:max-w-[502px] xl:border  dark:border-none mx-auto my-auto">
-                <TabsTrigger className="w-[162px] xl:w-auto " value="personal">
+              <TabsList className="w-full grid xl:grid-cols-3 xl:max-w-[502px] xl:border dark:border-none mx-auto my-auto">
+                <TabsTrigger className="w-[162px] xl:w-auto" value="personal">
                   Personal Info
                 </TabsTrigger>
                 <TabsTrigger
@@ -147,7 +146,7 @@ const About = () => {
                   Qualifications
                 </TabsTrigger>
                 <TabsTrigger className="w-[162px] xl:w-auto" value="expertise">
-                Expertise
+                  Expertise
                 </TabsTrigger>
               </TabsList>
               {/* tabs content */}
@@ -155,27 +154,23 @@ const About = () => {
                 {/* personal */}
                 <TabsContent value="personal">
                   <div className="text-center">
-                    <h3 className="h3 mb-4">
-                    Provide the best service
-                    </h3>
+                    <h3 className="h3 mb-4">Provide the best service</h3>
                     <p className="subtitle max-w-xl mx-auto xl:text-center">
                       I specialize in crafting intuitive websites with
                       cutting-edge technology, delivering dynamic and engaging
                       user experiences.
                     </p>
                     {/* icons */}
-                    <div className="grid xl:grid-cols-2 gap-4 mb-14">
-                      {infoData.map((item, index) => {
-                        return (
-                          <div
-                            className="flex items-center gap-x-4 mx-auto text-center"
-                            key={index}
-                          >
-                            <div className="text-primary">{item.icon}</div>
-                            <div>{item.text}</div>
-                          </div>
-                        );
-                      })}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-14">
+                      {infoData.map((item, index) => (
+                        <div
+                          className="flex items-center gap-x-4 mx-auto text-center"
+                          key={index}
+                        >
+                          <div className="text-primary">{item.icon}</div>
+                          <div>{item.text}</div>
+                        </div>
+                      ))}
                     </div>
                     {/* languages */}
                     <div className="flex flex-col gap-y-2">
@@ -191,7 +186,7 @@ const About = () => {
                     <h3 className="h3 mb-8 text-center">My Awesome Journey</h3>
                     {/* experience & education wrapper */}
                     <div className="flex flex-col items-center">
-                      <div className="grid md:grid-cols-2 gap-y-10 text gap-x-10">
+                      <div className="grid md:grid-cols-2 gap-y-10 gap-x-10">
                         {/* experience */}
                         <div className="flex flex-col gap-y-6 items-center mb-8 md:mb-0">
                           <div className="flex gap-x-4 items-center text-[22px] text-primary">
@@ -287,7 +282,7 @@ const About = () => {
                             const { name } = item;
                             return (
                               <div
-                                className="w-2/4 text-center mx-auto"
+                                className="w-full text-center mx-auto"
                                 key={index}
                               >
                                 <div className="font-medium">{name}</div>
@@ -302,7 +297,7 @@ const About = () => {
                       <h4 className="text-xl font-semibold mb-2">Tools</h4>
                       <div className="border-b border-border mb-4"></div>
                       {/* tool list */}
-                      <div className="flex gap-x-8 justify-center">
+                      <div className="flex flex-wrap gap-4 justify-center">
                         {getData(skillData, "tools").data.map((item, index) => {
                           const { imgPath } = item;
                           return (
