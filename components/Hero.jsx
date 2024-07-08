@@ -8,7 +8,6 @@ import { RiArrowDownSLine } from "react-icons/ri";
 // components
 import Socials from "./Socials";
 
-// Import animate.css
 import "animate.css";
 
 const Hero = () => {
@@ -24,10 +23,10 @@ const Hero = () => {
 
   return (
     <section className="py-12 xl:py-24 min-h-screen xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col items-center xl:flex-row justify-between gap-y-8 xl:gap-x-8">
+      <div className="container mx-auto px-4 items-center text-center">
+        <div className="flex flex-col items-center xl:flex-row justify-center gap-y-8 xl:gap-x-8">
           {/* text */}
-          <div className="flex max-w-[700px] flex-col justify-center mx-auto text-center xl:text-left">
+          <div className="flex max-w-[700px] flex-col justify-center text-center xl:text-left">
             <div className="frontend text-sm uppercase font-semibold mb-4 text-primary tracking-[4px] text-center animate__animated animate__fadeInUp animate__delay-1s">
               Frontend Developer
             </div>
@@ -55,13 +54,11 @@ const Hero = () => {
             </div>
             {/* socials */}
             <Socials containerStyles="sosial flex gap-x-6 mx-auto xl:mx-0 justify-center animate__animated animate__fadeInUp animate__delay-1s" />
+            {/* icon */}
+            <div className="hidden md:flex absolute left-2/4 transform -translate-x-2/4 bottom-12 animate-bounce">
+              <RiArrowDownSLine className="text-5xl text-primary" />
+            </div>
           </div>
-          {/* image */}
-          <div className="hidden xl:flex relative">{/* Image */}</div>
-        </div>
-        {/* icon */}
-        <div className="hidden md:flex absolute left-2/4 transform -translate-x-2/4 bottom-12 animate-bounce">
-          <RiArrowDownSLine className="text-3xl text-primary" />
         </div>
       </div>
     </section>
