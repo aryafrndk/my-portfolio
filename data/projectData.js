@@ -1,7 +1,16 @@
 const projectData = [
+  {
+      image: "/work/6.png",
+      category: "react js, Vite, Tailwindcss",
+      name: "TRadio Player",
+      description:
+        "Radio Player project built with ReactJS. Features include real-time song metadata display, play/pause functionality, volume control, and a responsive UI design.",
+      link: "https://tradioplayer.vercel.app/",
+      github: "https://github.com/aryafrndk/telkomradio",
+    },
     {
       image: "/work/5.png",
-      category: "react js, react Bootstrap,",
+      category: "react js, react Bootstrap",
       name: "Academicx",
       description:
         "Responsive class website built with ReactJS and Vite. Features: React-Router, Swiper, Animate Style, Animate On Scroll, Accordion, Bootstrap/React-Bootstrap.",
