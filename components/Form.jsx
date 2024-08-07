@@ -32,7 +32,7 @@ const Form = () => {
       setFormData({ name: '', email: '', message: '' });
     } else {
       alert('Error sending email.');
-    }
+    } 
   };
 
   return (
