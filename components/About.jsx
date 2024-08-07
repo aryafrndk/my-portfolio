@@ -9,6 +9,7 @@ import {
   GraduationCap,
   Calendar,
   Briefcase,
+  Building,
 } from "lucide-react";
 
 const infoData = [
@@ -66,6 +67,16 @@ const qualificationData = [
         company: "Telkom Radio",
         role: "Staff Of Station Division",
         years: "2021 - 2022",
+      },
+    ],
+  },
+  {
+    title: "experience",
+    data: [
+      {
+        company: "Luar Sekolah",
+        role: "Web Developer Internship",
+        years: "2024 - Now",
       },
     ],
   },
@@ -187,20 +198,20 @@ const About = () => {
                 <TabsContent value="qualifications">
                   <div>
                     <h3 className="h3 mb-8 text-center">My Awesome Journey</h3>
-                    {/* experience & education wrapper */}
+                    {/* organization & education wrapper */}
                     <div className="flex flex-col items-center">
-                      <div className="grid md:grid-cols-2 gap-y-10 gap-x-10">
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-y-10 gap-x-10">
                         {/* experience */}
-                        <div className="flex flex-col gap-y-6 items-center mb-8 md:mb-0">
+                        <div className="flex flex-col gap-y-6 items-center">
                           <div className="flex gap-x-4 items-center text-[22px] text-primary">
-                            <Briefcase />
-                            <h4 className="capitalize font-medium">
-                              {getData(qualificationData, "organization").title}
+                            <Briefcase size={28} />
+                            <h4 className="capitalize font-medium text-center">
+                              {getData(qualificationData, "experience").title}
                             </h4>
                           </div>
                           {/* list */}
                           <div className="flex flex-col gap-y-8 items-center">
-                            {getData(qualificationData, "organization").data.map(
+                            {getData(qualificationData, "experience").data.map(
                               (item, index) => {
                                 const { company, role, years } = item;
                                 return (
@@ -264,6 +275,45 @@ const About = () => {
                                 );
                               }
                             )}
+                          </div>
+                        </div>
+                        {/* organization */}
+                        <div className="flex flex-col gap-y-6 items-center">
+                          <div className="flex gap-x-4 items-center text-[22px] text-primary">
+                            <Building size={28} />
+                            <h4 className="capitalize font-medium text-center">
+                              {getData(qualificationData, "organization").title}
+                            </h4>
+                          </div>
+                          {/* list */}
+                          <div className="flex flex-col gap-y-8 items-center">
+                            {getData(
+                              qualificationData,
+                              "organization"
+                            ).data.map((item, index) => {
+                              const { company, role, years } = item;
+                              return (
+                                <div
+                                  className="flex gap-x-8 group items-start justify-start w-full max-w-md"
+                                  key={index}
+                                >
+                                  <div className="h-[84px] bg-border relative ml-2">
+                                    <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
+                                  </div>
+                                  <div>
+                                    <div className="font-semibold text-xl leading-none mb-2">
+                                      {company}
+                                    </div>
+                                    <div className="text-lg leading-none text-muted-foreground mb-4">
+                                      {role}
+                                    </div>
+                                    <div className="text-base font-medium">
+                                      {years}
+                                    </div>
+                                  </div>
+                                </div>
+                              );
+                            })}
                           </div>
                         </div>
                       </div>
